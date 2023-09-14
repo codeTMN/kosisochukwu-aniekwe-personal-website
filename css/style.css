@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Courier Prime", sans-serif;
+  font-weight: 400;
+  color: #343a40;
+  overflow-x: hidden;
+}
+
+/* GENERAL(REUSABLE) */
+.container {
+  max-width: 120rem;
+  padding: 4.8rem;
+  margin: 0 auto;
+}
+
+/* HEADER SECTION */
+
+.header {
+  padding: 4.8rem 8.4rem;
+  height: 100vh;
+  background-color: #212529;
+  /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0, 0.8)); */
+  text-align: center;
+}
+
+.header-name {
+  margin-top: 6.4rem;
+  margin-bottom: 1.8rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #adb5bd;
+}
+
+.header-alts {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 4.8rem;
+  color: #868e96;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 6.4rem;
+}
+
+.social-icon {
+  color: #adb5bd;
+  font-size: 2.4rem;
+  transition: all 0.4s;
+}
+
+.social-icon:hover {
+  color: #dee2e6;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.links:link,
+.links:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #f7f7f7;
+  font-weight: 600;
+  cursor: pointer;
+  border: 3px solid #495057;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10rem;
+  transition: all 0.4s;
+}
+
+.links:hover,
+.links:active {
+  background-color: #adb5bd;
+  color: #343a40;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  background-color: #adb5bd;
+  padding: 4.8rem;
+}
+
+.about-heading {
+  font-size: 4.8rem;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+}
+
+.about--me {
+  font-size: 2.4rem;
+  line-height: 1.6;
+}
+
+/* SKILLS SECTION */
+
+
+.skill-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.skills {
+  background-color: #495057;
+  color: #ced4da;
+}
+
+.skill {
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+/* CONTACT */
+
+.contact-sec {
+  background-color: #212529;
+  padding: 4.8rem;
+  color: #adb5bd;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-heading {
+  font-size: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.email--tel {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.tele--email:link,
+.tele--email:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #f1f3f5;
+  transition: all 0.4s;
+}
+
+.tele--email:hover,
+.tele--email:active {
+  color: #ced4da;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  border: none;
+  margin-bottom: 2rem;
+  background-color: #495057;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  transition: all 0.4s;
+}
+
+.contact-form input:focus {
+  color: #f1f3f5;
+  outline: 2px solid #868e96;
+}
+
+.contact-form input::placeholder {
+  color: #dee2e6;
+}
+
+.contact-form textarea::placeholder {
+  color: #dee2e6;
+}
+
+.contact-form textarea:focus {
+  color: #f1f3f5;
+  outline: 2px solid #868e96;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit {
+  font-size: 2rem;
+  padding: 1.2rem 3.2rem;
+  background-color: #343a40;
+  border: 3px solid #343a40;
+  border-radius: 9px;
+  color: #f7f7f7;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.submit:hover {
+  background-color: #ced4da;
+  color: #343a40;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #212529;
+}
+.footer {
+  text-align: center;
+  padding: 9.6rem 9.6rem 6.4rem 9.6rem;
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  color: #f1f3f5;
+}
+
+.footer-text a:link,
+.footer-text a:visited {
+  color: #7048e8;
+  transition: all 0.4s;
+}
+
+.footer-text a:hover,
+.footer-text a:active{
+  color: #9775fa;
+}
+
+.footer-hr{
+  width: 20rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1.8rem;
+}
+
+.footer--social-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}

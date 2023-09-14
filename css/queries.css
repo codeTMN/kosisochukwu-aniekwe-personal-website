@@ -1,0 +1,124 @@
+/* BELOW 1266px */
+
+@media (max-width: 79em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* BELOW 1040px */
+
+@media (max-width: 65em) {
+  html {
+    /* font-size: 50%; */
+  }
+
+  .header {
+    padding: 3.2rem 6.4rem;
+    height: 90vh;
+  }
+
+  .header-name {
+    font-size: 4.8rem;
+  }
+
+  .header-alts {
+    font-size: 2.4rem;
+  }
+
+  .about-heading {
+    font-size: 3.2rem;
+  }
+
+  .skill-heading {
+    font-size: 3.2rem;
+  }
+
+  .skill--c {
+    padding: 9.6rem;
+  }
+
+  .contact-heading {
+    font-size: 3.2rem;
+  }
+}
+
+/* BELOW 800px */
+
+@media (max-width: 50em) {
+  .header {
+    height: auto;
+  }
+  .header-name {
+    font-size: 3.2rem;
+  }
+
+  .header-alts {
+    font-size: 3rem;
+  }
+
+  .links:link,
+  .links:visited {
+    font-size: 1.6rem;
+  }
+
+  .about--me {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .skill {
+    font-size: 1.6rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    margin-bottom: 4.8rem;
+  }
+}
+
+/* BELOW 528 (Mobile) */
+
+@media (max-width: 33em) {
+  .header {
+    padding: 2.4rem;
+    padding-top: 0;
+  }
+
+  .header-name {
+    font-size: 2.6rem;
+  }
+
+  .header-alts{
+    font-size: 1.8rem;
+  }
+
+  .about{
+    padding: 2.4rem;
+  }
+
+  .about-heading{
+    font-size: 2rem;
+  }
+
+  .skill-heading{
+    font-size: 2rem;
+  }
+
+  .contact-heading{
+    font-size: 2rem;
+  }
+
+  .links:link,
+  .links:visited {
+    font-size: 1.2rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+  .contacts{
+    padding: 1.8rem;
+  }
+}
